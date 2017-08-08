@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="EN" lang="EN">
+	<head>
+		{% load staticfiles %}
+		<title>CONTROL DEL REGADIO</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<link href="{% static "/css/layout.css" %}" rel="stylesheet">
+	</head>
+	</head>
+
+	<body id="top">
+		<h1>Recepcion de los datos</h1>
+		<form>{{sensor.temp_master}}</form>
+
+		{% for element in sensors %}
+			{{element.temp_master}}
+		{% endfor %}
+
+	</body>
+</html>		
+	
